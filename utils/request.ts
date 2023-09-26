@@ -1,5 +1,3 @@
-// const url = `http://localhost:3000/api/google-place-api?query=${query}`;
-
 export const photoBaseUrl =
 	"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400";
 

@@ -1,8 +1,8 @@
 import React from "react";
-import { CgCloseR } from "react-icons/cg";
 import { photoBaseUrl } from "@/utils/request";
 import Image from "next/image";
 import { IoLocationSharp } from "react-icons/io5";
+import { MdOutlineClose } from "react-icons/md";
 
 const SideDrawer = ({ place, close }: any) => {
 	const hasPhotos = place && place.photos && place.photos.length > 0;
@@ -14,8 +14,11 @@ const SideDrawer = ({ place, close }: any) => {
 
 	return (
 		<div className="fixed right-0 w-96 h-screen top-0 bg-blue-400 z-20">
-			<button onClick={() => close()} className="relative p-4">
-				<CgCloseR className="text-gray-200" size={24} />
+			<button onClick={() => close()} className="relative p-4 group">
+				<MdOutlineClose
+					className="text-gray-200 border m-2 rounded group-hover:bg-red-300 transition-all"
+					size={24}
+				/>
 			</button>
 
 			<div className="relative p-8  flex flex-col space-y-6">

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useContext } from "react";
-import { BiSearch } from "react-icons/bi";
+import { BsSearch } from "react-icons/bs";
 import { useUserSearchContext } from "@/context/userSearchContext";
 
 const Searchbar = () => {
@@ -27,7 +27,7 @@ const Searchbar = () => {
 				// onClick={onSubmit}
 				className="absolute right-0 top-0 text-blue-500 p-2 hover:text-gray-500"
 			>
-				<BiSearch size={24} />
+				<BsSearch size={24} />
 			</button>
 		</form>
 	);

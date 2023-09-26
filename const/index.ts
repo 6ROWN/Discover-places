@@ -6,8 +6,12 @@ import {
 	MdOutlineConnectingAirports,
 	MdMuseum,
 } from "react-icons/md";
-import { BiSolidHotel, BiSolidBank, BiSolidDrink } from "react-icons/bi";
-import { BsFillCarFrontFill } from "react-icons/bs";
+import {
+	BiSolidHotel,
+	BiSolidBank,
+	BiSolidDrink,
+	BiSolidCar,
+} from "react-icons/bi";
 
 export const categories = [
 	{ id: 1, name: "Hotels", icon: BiSolidHotel },
@@ -18,6 +22,6 @@ export const categories = [
 	{ id: 6, name: "Banks", icon: BiSolidBank },
 	{ id: 7, name: "Airport", icon: MdOutlineConnectingAirports },
 	{ id: 8, name: "Bar", icon: BiSolidDrink },
-	{ id: 9, name: "Parking", icon: BsFillCarFrontFill },
+	{ id: 9, name: "Parking", icon: BiSolidCar },
 	{ id: 10, name: "Museum", icon: MdMuseum },
 ];

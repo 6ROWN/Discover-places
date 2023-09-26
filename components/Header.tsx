@@ -2,7 +2,7 @@ import React from "react";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import Link from "next/link";
 import Searchbar from "./Searchbar";
-import { IoMenuSharp } from "react-icons/io5";
+import { MdOutlineMenu } from "react-icons/md";
 import Image from "next/image";
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
 				<Link href="" className="hidden md:flex">
 					Explore
 				</Link>
-				<IoMenuSharp size={24} />
+				<MdOutlineMenu size={24} />
 			</section>
 		</nav>
 	);

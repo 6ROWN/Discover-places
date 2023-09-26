@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { IoLocationSharp } from "react-icons/io5";
+import { MdLocationOn } from "react-icons/md";
 import { photoBaseUrl } from "@/utils/request";
 
 const PlaceCard = ({ placeData }: any) => {
@@ -34,7 +34,7 @@ const PlaceCard = ({ placeData }: any) => {
 			<div className="p-2 flex flex-col space-y-2 flex-grow border rounded-b-lg">
 				<h1 className="font-semibold">{placeData.name}</h1>
 				<div className="flex space-x-2 items-center">
-					<IoLocationSharp size={16} className="text-gray-500" />
+					<MdLocationOn size={16} className="text-gray-500" />
 					<p className="text-sm text-gray-500">
 						{placeData.formatted_address}
 					</p>
