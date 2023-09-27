@@ -11,6 +11,7 @@ const Searchbar = () => {
 		e.preventDefault();
 		if (queryValue.trim() !== "") {
 			setSearchInput(queryValue.trim());
+			setQueryValue("");
 		}
 	};
 

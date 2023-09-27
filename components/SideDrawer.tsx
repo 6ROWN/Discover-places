@@ -8,7 +8,7 @@ const SideDrawer = ({ place, close }: any) => {
 	const hasPhotos = place && place.photos && place.photos.length > 0;
 	const handleDirection = () => {
 		window.open(
-			`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_PLACE_API_KEY}&q=${place.name}${place.formatted_address}`
+			`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_PLACE_API_KEY}&q=${place.name}${place.formatted_address},{ mode: 'no-cors' }`
 		);
 	};
 
@@ -31,6 +31,7 @@ const SideDrawer = ({ place, close }: any) => {
 							width={800}
 							height={800}
 							className="w-full h-[120px] rounded-t-lg object-cover shadow-lg"
+							priority
 						/>
 					) : (
 						// Display a default image if there are no photos
@@ -40,6 +41,7 @@ const SideDrawer = ({ place, close }: any) => {
 							width={100}
 							height={100}
 							className="w-full h-[120px] rounded-t-lg object-cover shadow-lg"
+							priority
 						/>
 					)}
 				</div>

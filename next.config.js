@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	images: {
-		domains: ["maps.googleapis.com"],
+		unoptimized: true,
+		domains: ["maps.googleapis.com", "apis.google.com/"],
 	},
+	reactStrictMode: false,
 };
 
 module.exports = nextConfig;

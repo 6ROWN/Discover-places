@@ -19,6 +19,7 @@ const PlaceCard = ({ placeData }: any) => {
 						width={800}
 						height={800}
 						className="w-full h-[120px] rounded-t-lg object-cover shadow-lg"
+						priority
 					/>
 				) : (
 					// Display a default image if there are no photos
@@ -28,6 +29,7 @@ const PlaceCard = ({ placeData }: any) => {
 						width={100}
 						height={100}
 						className="w-full h-[120px] rounded-t-lg object-cover shadow-lg"
+						priority
 					/>
 				)}
 			</div>

@@ -19,10 +19,8 @@ const PlaceList = ({ placeLists }: any) => {
 		<div className="w-full">
 			<div className="w-11/12 mx-auto">
 				<h1 className="pb-4 text-lg font-bold">
-					{" "}
 					Searching results for {searchInput}
 				</h1>
-
 				<div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">
 					{placeLists?.map((placeData: any, index: number) => (
 						<div
