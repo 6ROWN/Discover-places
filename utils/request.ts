@@ -3,7 +3,7 @@ export const photoBaseUrl =
 
 export const fetchPlaces = async (query: string) => {
 	const response = await fetch(
-		`http://localhost:3000/api/google-place-api?query=${query}`
+		`http://localhost:3000/api/google-place-api?query=${query},{ mode: 'no-cors' }`
 	);
 	const result = await response.json();
 	return result.results;
