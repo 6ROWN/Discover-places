@@ -9,11 +9,11 @@ const PlaceList = ({ placeLists }: any) => {
 	const [selectedPlace, setSelectedPlace] = useState<any>([]);
 	const { searchInput } = useUserSearchContext();
 
-	const generateSkeletonArray = (count: number) => {
-		return Array.from({ length: count }, (_, index) => (
-			<Skeleton key={index} />
-		));
-	};
+	// const generateSkeletonArray = (count: number) => {
+	// 	return Array.from({ length: count }, (_, index) => (
+	// 		<Skeleton key={index} />
+	// 	));
+	// };
 
 	return (
 		<div className="w-full">
@@ -32,11 +32,11 @@ const PlaceList = ({ placeLists }: any) => {
 					))}
 				</div>
 				<div>
-					{placeLists?.length == 0 && (
+					{/* {placeLists?.length && (
 						<div className="mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">
 							{generateSkeletonArray(10)}
 						</div>
-					)}
+					)} */}
 				</div>
 				<div>
 					{selectedPlace?.name ? (
