@@ -9,7 +9,8 @@ export async function GET(request: Request) {
 	const query = searchParams.get("query");
 
 	const response = await fetch(
-		`${BASE_URL}?query=${query}&key=${GOOGLE_PLACE_API_KEY}`
+		`${BASE_URL}?query=${query}&key=${GOOGLE_PLACE_API_KEY}`,
+		{ mode: "no-cors" }
 	);
 	const result = await response.json();
 
