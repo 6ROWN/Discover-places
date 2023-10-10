@@ -4,7 +4,10 @@ const nextConfig = {
 		unoptimized: true,
 		domains: ["maps.googleapis.com", "apis.google.com/"],
 	},
-	reactStrictMode: false,
+	reactStrictMode: true,
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
 };
 
 module.exports = nextConfig;

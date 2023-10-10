@@ -23,7 +23,7 @@ const Header = () => {
 				<Searchbar />
 			</section>
 			<section className="flex space-x-8">
-				<Link href="" className="hidden md:flex">
+				<Link href="/" className="hidden md:flex">
 					Explore
 				</Link>
 				<MdOutlineMenu size={24} />

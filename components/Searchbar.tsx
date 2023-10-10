@@ -26,9 +26,9 @@ const Searchbar = () => {
 			<button
 				type="submit"
 				// onClick={onSubmit}
-				className="absolute right-0 top-0 text-blue-500 p-2 hover:text-gray-500"
+				className="absolute right-0 top-0 text-blue-500 p-2.5 hover:text-gray-500"
 			>
-				<BsSearch size={24} />
+				<BsSearch size={20} />
 			</button>
 		</form>
 	);
